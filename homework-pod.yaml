@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: homework-pod
+  labels:
+    app: homework
+spec:
+  containers:
+  - name: homework
+    image: antfere/homework:latest
+    ports:
+    - containerPort: 80
